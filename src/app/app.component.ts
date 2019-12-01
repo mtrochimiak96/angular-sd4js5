@@ -11,14 +11,19 @@ export class AppComponent implements OnInit {
 
   komunikaty:string[];
   pokazKomunikaty = true;
-  nowyKomunikat: Komunikat;
+  // nowyKomunikat: Komunikat;
 
   ngOnInit() {
 this.komunikaty = [
-  'Ala ma kota',
-  'Kot ma dosc Ali',
-  'Kot i Ala drą ze sobą koty'
+  // 'Ala ma kota',
+  // 'Kot ma dosc Ali',
+  // 'Kot i Ala drą ze sobą koty',
+  new Komunikat('Treść pierwszego komunikatu', new Date(), false),
+  new Komunikat('Treść drugiego komunikatu', new Date(), true),
+  new Komunikat('Treść trzeciego komunikatu', new Date(), false),
 ];
-this.nowyKomunikat = new Komunikat('Nowy komunikat', new Date(), true);
+// this.nowyKomunikat = new Komunikat('Treść pierwszego komunikatu', new Date(), false);
+// this.nowyKomunikat = new Komunikat('Treść drugiego komunikatu', new Date(), true);
+// this.nowyKomunikat = new Komunikat('Treść trzeciego komunikatu', new Date(), false);
   }
 }

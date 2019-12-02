@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
 import { Komunikat } from '../komunikat';
+import { Component, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-komunikat',
@@ -8,6 +9,6 @@ import { Komunikat } from '../komunikat';
 })
 export class KomunikatComponent{
 
-@Input() komunikaty: Komunikat[];
+@Input() hey: Komunikat[];
 
 }

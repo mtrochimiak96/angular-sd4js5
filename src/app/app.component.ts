@@ -7,7 +7,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent implements OnInit {
-  name = 'Angular 5';
+  name = 'Slowo';
 
   komunikaty:string[];
   pokazKomunikaty = true;
@@ -18,7 +18,7 @@ this.komunikaty = [
   // 'Ala ma kota',
   // 'Kot ma dosc Ali',
   // 'Kot i Ala drą ze sobą koty',
-  new Komunikat('Treść pierwszego komunikatu', new Date(), false),
+  new Komunikat('Treść pierwszego komunikatu', new Date(), true),
   new Komunikat('Treść drugiego komunikatu', new Date(), true),
   new Komunikat('Treść trzeciego komunikatu', new Date(), false),
 ];
